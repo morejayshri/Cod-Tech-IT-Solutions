@@ -1,0 +1,17 @@
+package com.example.demo.entity;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
+
+@Table(name = "students_marks")
+public class StudentMarks {
+	
+	@Column(name = "chemestry", nullable = false)
+	private int chemestry;
+	private int physics;
+	private int math;
+	private int biology;
+	
+
+}

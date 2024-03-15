@@ -1,0 +1,54 @@
+package com.example.demo.entity;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
+
+@Table(name = "students_marks")
+public class StudentMarks {
+	
+	@Column(name = "chemestry", nullable = false)
+	private int chemestry;
+	
+	public int getChemestry() {
+		return chemestry;
+	}
+
+	public void setChemestry(int chemestry) {
+		this.chemestry = chemestry;
+	}
+
+	public int getPhysics() {
+		return physics;
+	}
+
+	public void setPhysics(int physics) {
+		this.physics = physics;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public void setMath(int math) {
+		this.math = math;
+	}
+
+	public int getBiology() {
+		return biology;
+	}
+
+	public void setBiology(int biology) {
+		this.biology = biology;
+	}
+
+	@Column(name = "physics")
+	private int physics;
+	
+	@Column(name = "math")
+	private int math;
+	
+	@Column(name = "biology")
+	private int biology;
+
+}
